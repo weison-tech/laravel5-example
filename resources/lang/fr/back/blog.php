@@ -11,6 +11,7 @@ return [
 	'tags' => 'Mots-clés',
 	'edition' => 'Modification',
 	'add' => 'Ajouter un article',
+	'Articles' => 'Les articles',
 	'posts' => 'Articles',
 	'date' => 'Date',
 	'author' => 'Auteur',

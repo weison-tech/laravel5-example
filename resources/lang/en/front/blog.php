@@ -4,6 +4,7 @@ return [
 	'button' => 'Read more',
 	'on' => 'on',
 	'updated' => ' updated on ',
+	'created' => 'created on',
 	'tags' => 'Tags : ',
 	'comments' => 'Comments',
 	'comment' => 'A comment ?',

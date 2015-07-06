@@ -11,6 +11,7 @@ return [
 	'tags' => 'Tags',
 	'edition' => 'Edition',
 	'add' => 'Add a post',
+	'articles' => 'Articles',
 	'posts' => 'Posts',
 	'date' => 'Date',
 	'author' => 'Author',

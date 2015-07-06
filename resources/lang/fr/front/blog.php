@@ -4,6 +4,7 @@ return [
 	'button' => 'En lire plus',
 	'on' => 'le',
 	'updated' => ' et mis à jour le ',
+	'created' => 'créé sur',
 	'tags' => 'Mots-clés : ',
 	'comments' => 'Commentaires',
 	'comment' => 'Un commentaire vous aussi ?',

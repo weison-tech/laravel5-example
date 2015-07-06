@@ -89,12 +89,14 @@
 		{!! HTML::script('ckeditor/ckeditor.js') !!}
 	@endif
 
-	<script>	  
+	<script>
+
+		var lang = '{{ config('app.locale') }}'.toLowerCase();
 
 		@if(session('statut') != 'visitor')
 
 			CKEDITOR.replace('comments', {
-				language: '{{ config('app.locale') }}',
+				language: lang,
 				height: 200,
 				toolbarGroups: [
 					{ name: 'basicstyles', groups: [ 'basicstyles'] }, 

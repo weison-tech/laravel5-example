@@ -13,25 +13,28 @@
     </div>
 
     <div class="row">
+        @if(count($posts))
+            @foreach($posts as $post)
+                <div class="box">
+                    <div class="col-lg-12 text-center">
+                        <h2>{{ $post->title }}
+                        <br>
+                        <small>{{ $post->user->username }} {{$post->created_at != $post->updated_at ? trans('front/blog.updated').trans('front/blog.on').$post->updated_at : trans('front/blog.created').trans('front/blog.on').$post->created_at}}</small>
+                        </h2>
+                    </div>
+                    <div class="col-lg-12">
+                        <p>{!! $post->summary !!}</p>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        {!! link_to('blog/' . $post->slug, trans('front/blog.button'), ['class' => 'btn btn-default btn-lg']) !!}
+                        <hr>
+                    </div>
+                </div>
+            @endforeach
+        @else
+            <h4 class="text-center">没有找到数据</h4>
+        @endif
 
-        @foreach($posts as $post)
-            <div class="box">
-                <div class="col-lg-12 text-center">
-                    <h2>{{ $post->title }}
-                    <br>
-                    <small>{{ $post->user->username }} {{ trans('front/blog.on') }} {!! $post->created_at . ($post->created_at != $post->updated_at ? trans('front/blog.updated') . $post->updated_at : '') !!}</small>
-                    </h2>
-                </div>
-                <div class="col-lg-12">
-                    <p>{!! $post->summary !!}</p>
-                </div>
-                <div class="col-lg-12 text-center">
-                    {!! link_to('blog/' . $post->slug, trans('front/blog.button'), ['class' => 'btn btn-default btn-lg']) !!}
-                    <hr>
-                </div>
-            </div>
-        @endforeach
-     
         <div class="col-lg-12 text-center">
             {!! $links !!}
         </div>

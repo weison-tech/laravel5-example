@@ -93,7 +93,7 @@
 							@endif
 						@endif
 						<li class="imgflag">
-							<a href="{!! url('language') !!}"><img width="32" height="32" alt="en" src="{!! asset('img/' . (session('locale') == 'fr' ? 'english' : 'french') . '-flag.png') !!}"></a>
+							<a href="{!! url('language') !!}"><img width="32" height="32" alt="en" src="{!! asset('img/' . (session('locale') == 'zh-CN' ? 'english' : 'chinese') . '-flag.png') !!}"></a>
 						</li>
 					</ul>
 				</div>
@@ -117,8 +117,8 @@
 		<p class="text-center"><small>Copyright &copy; Momo</small></p>
 	</footer>
 		
-	{!! HTML::script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js') !!}
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+	<!-- {!! HTML::script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js') !!} -->
+	<script>window.jQuery || document.write('<script src="{{ URL::asset('/') }}/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 	{!! HTML::script('js/plugins.js') !!}
 	{!! HTML::script('js/main.js') !!}
 

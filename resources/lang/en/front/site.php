@@ -1,8 +1,8 @@
 <?php
 
 return [
-	'title' => 'Laravel 5',
-	'sub-title' => 'An awesome PHP framework',
+	'title' => 'It we share',
+	'sub-title' => 'A php study site.',
 	'home' => 'Home',
 	'contact' => 'Contact',
 	'blog' => 'Blog',

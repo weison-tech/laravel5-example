@@ -13,7 +13,7 @@
 				<hr>
 				<h2 class="text-center">{{ $post->title }}
 				<br>
-				<small>{{ $post->user->username }} {{ trans('front/blog.on') }} {!! $post->created_at . ($post->created_at != $post->updated_at ? trans('front/blog.updated') . $post->updated_at : '') !!}</small>
+				<small>{{ $post->user->username }} {{$post->created_at != $post->updated_at ? trans('front/blog.updated').trans('front/blog.on').$post->updated_at : trans('front/blog.created').trans('front/blog.on').$post->created_at}}</small>
 				</h2>
 				<hr>
 				{!! $post->summary !!}<br>

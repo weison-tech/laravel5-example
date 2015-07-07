@@ -16,5 +16,6 @@ return [
 	'new-messages' => '新消息 !',
 	'new-registers' => '新用户 !',
 	'new-posts' => '新文章 !',
-	'new-comments' => '新评论 !'
+	'new-comments' => '新评论 !',
+	'title' => '管理后台-小马博客',
 ];

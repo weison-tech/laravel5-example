@@ -114,7 +114,7 @@
 
 	<footer role="contentinfo">
 		 @yield('footer')
-		<p class="text-center"><small>Copyright &copy; Momo</small></p>
+		<p class="text-center"><small>备案号 &copy;粤ICP备15020071号</small></p>
 	</footer>
 		
 	<!-- {!! HTML::script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js') !!} -->

@@ -12,7 +12,7 @@ return [
 	'delete' => '删除评论',
 	'edit' => '编辑评论',
 	'change' => '在此修改评论 :',
-	'valid' => '有效',
+	'valid' => '发布',
 	'undo' => '撤销',
 	'fail-update' => '更新失败，没有数据或文字太长。',
 	'fail-delete' => '删除失败。',

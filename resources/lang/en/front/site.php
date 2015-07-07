@@ -1,8 +1,8 @@
 <?php
 
 return [
-	'title' => 'It we share',
-	'sub-title' => 'A php study site.',
+	'title' => 'Xiaoma Blog',
+	'sub-title' => 'Publish IT technical articles.',
 	'home' => 'Home',
 	'contact' => 'Contact',
 	'blog' => 'Blog',

@@ -1,8 +1,8 @@
 <?php
 
 return [
-	'title' => '小马自学网',
-	'sub-title' => '发布php技术文章',
+	'title' => '小马个人博客',
+	'sub-title' => '发布IT技术文章',
 	'home' => '首页',
 	'contact' => '联系我们',
 	'blog' => '博客',

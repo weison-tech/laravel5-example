@@ -110,6 +110,7 @@ return [
 		"username" => "用户名",
 		"name" => "姓名",
 		"message" => "消息内容",
+		"comments" => "评论内容",
 	],
 
 ];
